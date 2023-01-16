@@ -1,6 +1,8 @@
 const Seats = require('../models/seats');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
+
+// gets availability of seats status
 exports.getavailability = async (req, res, next) => {
     const lastbookingid = +req.query.id;
     try{
@@ -26,6 +28,7 @@ exports.getavailability = async (req, res, next) => {
     
 }
 
+// updates booking deatails in db
 exports.bookseats = async (req, res, next) => {
     const seatcount = +req.body.count;
     try{

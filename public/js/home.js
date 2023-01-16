@@ -4,12 +4,14 @@ const message = document.getElementById("message");
 
 const URL = "http://3.83.176.16:4000";
 
+// this function loads whenver page loads and diplays seatstructure and availability
 window.addEventListener("DOMContentLoaded", ()=>{
     SeatStructure();
     localStorage.removeItem('bookedseats');
     getavailability(0);
 })
 
+// this function takes seats no's as input and send to backend
 bookseats.addEventListener('click', async (e) => {
     e.preventDefault();
     const seatcount = document.getElementById('seats').value;
@@ -40,6 +42,7 @@ bookseats.addEventListener('click', async (e) => {
     }
 })
 
+// this function fetches data from backend and store it in localstorage
 async function getavailability(lastbookedid){
     try{
         let response = await axios.get(`${URL}/getavailability?id=${lastbookedid}`)
@@ -60,6 +63,7 @@ async function getavailability(lastbookedid){
     } 
 }
 
+// this function gets data from local storage and display on screen
 function showavailability(){
     let stringdata = localStorage.getItem("bookedseats");
     let seatsbooked = JSON.parse(stringdata);
@@ -73,6 +77,7 @@ function showavailability(){
     }
 }
 
+// this function displays seat structure on frontend
 function SeatStructure(){
     var count = 1;
     for(let i=0; i<rows.length; i++){
