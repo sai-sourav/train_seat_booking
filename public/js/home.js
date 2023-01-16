@@ -25,13 +25,18 @@ bookseats.addEventListener('click', async (e) => {
         else{
             bookedseats = JSON.parse(bookedseats);
         }
-        getavailability(bookedseats[bookedseats.length-1].seatid);
+        if(bookedseats.length > 0){
+            getavailability(bookedseats[bookedseats.length-1].seatid);
+        }else{
+            getavailability(0);
+        }
         
     }catch(err){
         if(err.response.status === 404){
             message.innerText = "❌ Seats booked, please select less seats";
+        }else{
+            console.log(err);
         }
-        console.log(err.response.status);
     }
 })
 
