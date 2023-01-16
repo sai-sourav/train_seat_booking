@@ -2,7 +2,7 @@ const rows = document.getElementsByClassName('seatrow');
 const bookseats = document.getElementById('bookseat');
 const message = document.getElementById("message");
 
-const URL = "http://localhost:4000";
+const URL = "http://3.83.176.16:4000";
 
 window.addEventListener("DOMContentLoaded", ()=>{
     SeatStructure();
