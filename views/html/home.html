@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Book your seats</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <fieldset id="bookseats">
+        <h2 id="title">Book your seat</h2>
+        <p id="message"></p>
+        <label for="seats">Select no of seats:</label><br>
+            <select id="seats" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7" selected>7</option>
+            </select><br><br>
+        <button id="bookseat" class="bookseat-btn">Book Seat(s)</button>
+    </fieldset>
+    <fieldset id="showseats">
+        <h2 id="title">Seats Availability</h2>
+        <div id="row1" class="seatrow">
+            <!-- <div id="s1" class="seat1">1</div>
+            <div id="s2" class="seat2">2</div>
+            <div id="s3" class="seat3">3</div>
+            <div id="s4" class="seat4">4</div>
+            <div id="s5" class="seat5">5</div>
+            <div id="s6" class="seat6">6</div>
+            <div id="s7" class="seat7">7</div> -->
+        </div><br>
+        <div id="row2" class="seatrow"></div><br>
+        <div id="row3" class="seatrow"></div><br>
+        <div id="row4" class="seatrow"></div><br>
+        <div id="row5" class="seatrow">&nbsp;</div><br>
+        <div id="row6" class="seatrow">&nbsp;</div><br>
+        <div id="row7" class="seatrow">&nbsp;</div><br>
+        <div id="row8" class="seatrow">&nbsp;</div><br>
+        <div id="row9" class="seatrow">&nbsp;</div><br>
+        <div id="row10" class="seatrow">&nbsp;</div><br>
+        <div id="row11" class="seatrow">&nbsp;</div><br>
+        <div id="row12" class="seatrow">
+            <!-- <div id="s78" class="seat3">78</div>
+            <div id="s79" class="seat4">79</div>
+            <div id="s80" class="seat5">80</div> -->
+        </div>
+    </fieldset>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="/js/home.js" defer></script>
+</html>

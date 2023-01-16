@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    justify-content: center;
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    background-image: url('../images/jk-gJhev0YgUcE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+body h1{
+    position: fixed;
+    /* top: 0.5px; */
+    font-family: 'Courier New', monospace;
+    color: whitesmoke;
+    font-size: 400%;
+}
+
+#bookseats {
+    background-color: whitesmoke;
+    top: 30vh;
+    left: 20vh;
+    border-radius: 30px;
+    padding: 40px;
+    position: fixed;
+}
+
+#seats {
+    width: 298px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+#showseats {
+    background-color: whitesmoke;
+    top: 15vh;
+    left: 90vh;
+    border-radius: 30px;
+    padding: 40px;
+    width: 60vh;
+    height: 60vh;
+    position: fixed;
+    overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+.bookseat-btn {
+    background-color: green;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    color: white;
+    font-family: inherit;
+    top: 3vh;
+    left: 4vh;
+    width: 35vh;
+    height: 40px;
+    font-size: 15px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#title {
+    padding: 0;
+    text-decoration-line: none;
+    position: relative;
+    top: 0vh;
+}
+
+.seatrow {
+    width: 430px; 
+    height: 50px; 
+    /* background: cadetblue;  */
+    border: #b30000;
+    border-style: solid;
+    border-width: 1px; 
+    border-color: black;
+    position: relative;
+}
+
+.seat1 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    top: 10px;
+    left: 20px;
+    border-width: 1px; 
+    border-color: black;
+    border-style: solid;
+}
+
+.seat2 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    top: 10px;
+    left: 80px; 
+    border-color: black;
+}
+
+.seat3 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    top: 10px;
+    left: 140px; 
+    border-color: black;
+}
+
+.seat4 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    top: 10px;
+    left: 200px;
+    border-color: black;
+}
+
+.seat5 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid; 
+    top: 10px;
+    left: 260px; 
+    border-color: black;
+}
+
+.seat6 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    top: 10px;
+    left: 320px; 
+    border-color: black;
+}
+
+.seat7 {
+    width: 30px; 
+    height: 30px;
+    position: absolute; 
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    top: 10px;
+    left: 380px; 
+    border-color: black;
+}
+
+.booked {
+    background-color: #b30000;
+    color: whitesmoke;
+}
